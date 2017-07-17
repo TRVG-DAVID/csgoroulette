@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/TRVG-DAVID/csgoroulette/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TRVG-DAVID/csgoroulette/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Comandos WiseR97:
+apt-get update
+apt-get install apache2
+apt-get install mysql-server
+apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+apt-get install phpmyadmin
+ 
+in apache2.conf write:
+Include /etc/phpmyadmin/apache.conf
+ 
+sudo a2enmod rewrite
+sudo service apache2 restart
+sudo nano /etc/apache2/sites-available/000-default.conf
+ 
+Code:
+<Directory "/var/www/html">
+AllowOverride All
+</Directory>
+    go to /etc/apache2/sites-av and open default
+    replace AllowOverride None to AllowOverride All
+    /etc/init.d/apache2 restart
+    domain.com/phpmyadmin
+    make a new db called csgo
+    upload the .sql from the script
+    - a2enmod rewrite
+    --
+    - apt-get install curl
+    - curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+    - apt-get install -y nodejs
+    go to putty /home/
+    create directory called "bot"
+    copy paste all the bot files there (/home/bot)
+    prices 777
+    cd /home/bot
+    -npm install mysql
+    -npm install log4js
+    -npm install socket.io
+    -npm install request
+    -npm install fs
+    -npm install md5
+    -npm install sha256
+    -npm install mathjs
+    -npm install forever-monitor
+    -npm install forever -g
+    -npm install steamcommunity
+    -npm install steam-totp
+    -npm install steam-tradeoffers
+    -npm install async
+    -npm install engine.io
+    --
+    open index.php
+    change db info
+    change steam api key
+    open secret.php
+    change db info
